@@ -1,0 +1,19 @@
+{
+  "workers":{
+    "1060":{
+      "hasrate": "88.5 MH/s",
+      "reportedHashRate": "107.3 MH/s",
+      "workerLastSubmitTime": "1509912561"
+    },
+    "sapph":{
+      "hasrate": "106.5 MH/s",
+      "reportedHashRate": "117.3 MH/s",
+      "workerLastSubmitTime": "1509914561"
+    },
+    "nest":{
+      "hasrate": "111.5 MH/s",
+      "reportedHashRate": "154.3 MH/s",
+      "workerLastSubmitTime": "1509912531"
+    }
+  }
+}

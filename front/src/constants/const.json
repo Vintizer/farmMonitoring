@@ -1,0 +1,5 @@
+{
+    "ipLocal": "http://127.0.0.1:3001/insight-api",
+    "ipOut": "https://testnet.blockexplorer.com/api",
+    "network": "testnet"
+}
