@@ -14,12 +14,12 @@ class DataWindow extends Component {
         return (
             <div>
                 <span>Id</span>
-                <input type="text" id="idWallet" placeholder="ваш ID" value="9cee301c8fa73924c20ce694557f0471e1234549"
+                <input type="text" id="idWallet" placeholder="ваш ID" defaultValue="9cee301c8fa73924c20ce694557f0471e1234549"
                 />
                 введите ваш ID
                 <br />
                 <span>sec</span>
-                <input type="text" id="idTime" placeholder="секунд" value="10000" />
+                <input type="text" id="idTime" placeholder="секунд" defaultValue="10000" />
                 Введите время обновления данных в секундах
                 <br />
                 <button type="button" onClick={startMonitoring}>Start Monitoring</button>

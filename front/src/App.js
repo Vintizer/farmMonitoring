@@ -40,15 +40,12 @@ class App extends Component {
       console.log('errorchangeHashrate');
       return;
     }
-    this.setState({
-      workers:{
-        [worker] : {
-          "badHashrate" : val
-        }
+    this.setState(
+      { ...this.state.workers, workers[worker].badHashrate: val }
+    ),
+      () => {
+        console.log(this.state);
       }
-    }, ()=> {
-      console.log(this.state);
-    })
   }
 
   render() {
@@ -56,13 +53,13 @@ class App extends Component {
       <div>
         <div>
           <DataWindow
-          startMonitoring={this.getHashrates}
+            startMonitoring={this.getHashrates}
           />
         </div>
         <div>
           <HashrateTable
-          workers={this.state.workers}
-          changeHashrate = {this.changeHashrate}
+            workers={this.state.workers}
+            changeHashrate={this.changeHashrate}
           />
         </div>
       </div>
